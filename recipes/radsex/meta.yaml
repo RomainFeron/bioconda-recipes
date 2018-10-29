@@ -1,0 +1,30 @@
+{% set version = "0.1.0" %}
+
+package:
+  name: radsex
+  version: {{ version }}
+
+source:
+  url: https://github.com/RomainFeron/RadSex/archive/v{{ version }}.tar.gz
+  sha256: a4512044dd1694d7bbc7bd608230ee86654accffa67c77fe9c0e98a45194be3e
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c++') }}
+  host:
+    - zlib
+  run:
+    - zlib
+
+test:
+  commands:
+    - bin/radsex 2>&1 | grep 'Usage'
+
+about:
+  home: https://github.com/RomainFeron/RadSex
+  license: GPLv3
+  license_file: LICENSE
+  summary: 'A pipeline to find and visualize sex signal in RAD-Seq data'
