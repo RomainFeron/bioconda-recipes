@@ -13,7 +13,7 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c++') }}
+    - {{ compiler('c') }}
   host:
     - zlib
   run:
@@ -21,7 +21,7 @@ requirements:
 
 test:
   commands:
-    - bin/radsex 2>&1 | grep 'Usage'
+    - bin/radsex 2>&1'
 
 about:
   home: https://github.com/RomainFeron/RadSex
