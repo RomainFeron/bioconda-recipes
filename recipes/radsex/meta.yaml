@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: radsex
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/RomainFeron/RadSex/archive/v{{ version }}.tar.gz
-  sha256: a4512044dd1694d7bbc7bd608230ee86654accffa67c77fe9c0e98a45194be3e
+  sha256: 0b240be5ed9b3ff64e9f3af2e8dd093f4797ed42593081c2d5a1fee4dfc619e1
 
 build:
   number: 0
