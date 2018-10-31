@@ -21,7 +21,7 @@ requirements:
 
 test:
   commands:
-    - bin/radsex 2>&1'
+    - radsex | grep distrib
 
 about:
   home: https://github.com/RomainFeron/RadSex
